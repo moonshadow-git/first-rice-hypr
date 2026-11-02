@@ -1,0 +1,101 @@
+@define-color bg    #272E33;
+@define-color fg    #D3C6AA;
+@define-color bgl   #272E33;
+@define-color red   #E67E80;
+@define-color grn   #A7C080;
+@define-color orn   #E69875;
+@define-color ylw   #DBBC7F;
+@define-color blu   #7FBBB3;
+@define-color pur   #D699B6;
+@define-color aqu   #83C092;
+@define-color bla   #000000;
+
+
+
+
+*{
+  font-family: "Maple Mono";
+	font-size: 14px;
+	font-weight: bold;
+}
+
+window#waybar {
+	background: @bg;
+}
+
+#custom-sep {
+	color: @fg;
+}
+
+#memory {
+	color: @grn;
+}
+
+#memory.warning {
+	color: @ylw;
+}
+
+#memory.high {
+	color: @orn;
+}
+
+#memory.critical {
+	color: @red;
+}
+
+#memory.death {
+	color: @bla;
+}
+
+#cpu {
+  color: @grn;
+} 
+
+#workspaces button {
+	padding: 0 6px;
+	color: @fg;
+}
+
+#workspaces button.empty {
+	color: @fg;
+}
+
+#workspaces button.active {
+	color: @orn;
+}
+
+button:hover {
+	background: @bg;
+	box-shadow: @bg;
+	border: @bg;
+
+}
+
+#clock,
+#custom-sep,
+#cpu,
+#memory,
+#disk,
+#network,
+#wireplumber,
+#mpris {
+	padding: 0 5px;
+}
+
+#mpris {
+  color: @aqu;
+}
+
+#clock {
+  color: @ylw;
+}
+
+#network {
+  color: @red;
+}
+
+#wireplumber {
+  color: @pur;
+}
+
+

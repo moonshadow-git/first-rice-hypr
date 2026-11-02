@@ -1,0 +1,81 @@
+{
+	"position": "top",
+	"spacing": 10,
+	"height": 28,
+	"modules-left":[
+		"custom/sep",
+		"hyprland/workspaces",
+		"custom/sep",
+		"mpris",
+    "custom/sep"
+	],
+
+	"modules-center":[
+
+	],
+
+	"modules-right":[
+    "custom/sep",
+    "clock",
+    "custom/sep",
+		"wireplumber",
+		"custom/sep",
+		"network",
+		"custom/sep",
+		"memory",
+		"custom/sep"
+
+	],
+  "memory": {
+    "interval": 2,
+    "format": "RAM: {percentage}%",
+    "on-click": "kitty btop",
+    "states": {
+	    "warning": 25,
+	    "high": 50,
+	    "critical": 75,
+	    "death": 100
+  }
+ },
+
+"clock":{
+	"format":"{:%H:%M}"
+},
+
+"custom/sep": {
+	"format" : "|",
+	"interval": 0
+},
+
+"wireplumber": {
+	"on-click": "pavucontrol",
+	"format": "Vol: {volume}%",
+	"format-muted": "Muted"
+},
+
+"network": {
+	"interface": "wlan0",
+	"format": "{ifname}",
+	"format-wifi": "󰖩 : {signalStrength}%" ,
+	"format-disconnected": "󰖪 "
+},
+
+"mpris": {
+        "format": " {artist} - {title}",
+        "format-paused": "󰐊 {artist} - {title}",
+        "max-length": 45,
+        "tooltip": true,
+        "player": "drift"
+ },
+}
+
+"hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "on-click": "activate",
+        "format": "{name}",
+        "persistent-workspaces": {
+        "*": 3
+   }
+},
