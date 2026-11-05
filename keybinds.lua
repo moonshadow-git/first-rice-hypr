@@ -5,9 +5,9 @@
 -- Set programs that you use
 local terminal = "kitty"
 local fileManager = "dolphin"
-local menu = "rofi -show drun"
+local menu = "wofi --show drun"
 local mainMod = "SUPER"
-local browser = "zen-browser"
+local browser = "librewolf"
 local gaming = "steam"
 
 --------------------
